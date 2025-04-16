@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins', 'sans-serif';
+}
+
+body{
+    background: rgb(6, 21, 28);
+    color: white;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.navbar a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 35px;
+}
+.navbar a:hover,
+.navbar .active{
+    color: rgb(37, 131, 168);
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+
+   
+}
+.home-content{
+    /* background: yellowgreen; */
+    max-width: 600px;
+
+}
+
+.home-content h1{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,cursive;
+    line-height: 1.5;
+}
+.home-content h3{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(11, 181, 237);
+
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+
+}
+
+.home-content .button-box{
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-box a{
+    position: relative;
+    width: 150px;
+    height: 100%;
+    background:  rgb(11, 181, 237);
+    border: 2px solid rgb(11, 181, 237);
+    border-radius: 8px;
+    display: inline-flex;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.button-box a:nth-child(2){
+    background: transparent;
+    color:  rgb(11, 181, 237);
+}
+.button-box a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background:rgb(6, 21, 28);
+    z-index: -1; 
+    transition: 1s;
+}
+.button-box a:hover:before{
+    width: 100%;
+    color:  rgb(11, 181, 237);
+}
+.button-box a:nth-child(2)::before{
+    background:  rgb(11, 181, 237); 
+}
+.button-box a:nth-child(2):hover{
+    color: black;
+
+}
+.button-box a:hover{
+    color:  rgb(11, 181, 237);
+}
+
+.home-section{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.home-section a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(11, 181, 237); 
+    border-radius: 50%;
+    font-size: 20px;
+    color:  rgb(11, 181, 237);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    /* transition: .5s; */
+}
+
+.home-section a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(11, 181, 237);
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-section a:hover:before{
+    width: 100%;
+}
+.home-section a:hover{
+    color: black;
+}
+.img{
+    width: 700px;
+    height: 750px;
+    padding-top: 50px;
+    position: relative;
+    left: 100px;
+    top: 20px;
+}
